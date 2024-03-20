@@ -28,26 +28,21 @@ php -S localhost:8000
 
 open `http://localhost:8000` in your browser
 
-## Database
-open and run sql script in prepared database - migrations/create_tables.sql
-
-that will create `users` table
-
 ## Examples:
 
-##### index page
+### index page
 
 GET /index.php - main page (Guest or Authorized)
 
-Guest
+Page as Guest
 
 ![screenshot](images/guest.png)
 
-Authorized
+Page as Authorized
 
 ![screenshot](images/authorized.png)
 
-##### login page
+### login page
 
 GET /login.php - login form (Guest)
 
@@ -55,7 +50,7 @@ POST /login.php - sending login form (Guest)
 
 ![screenshot](images/login.png)
 
-##### registration page
+### registration page
 
 GET /registration.php - registration form (Guest)
 
