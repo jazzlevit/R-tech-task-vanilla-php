@@ -1,0 +1,17 @@
+{
+    "name": "jazzlevit/recman-test",
+    "autoload": {
+        "psr-4": {
+            "Jazzlevit\\RecmanTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jazzlevit",
+            "email": "jazzlevit@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    }
+}
