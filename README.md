@@ -1,17 +1,14 @@
 # RecMan test
 
-##
-
-first page is `public/index.php`
-
-
-### Set up configuration
-install composer dependencies  
+## Set up configuration
+- install composer dependencies  
 `composer install`
 
-copy config file and set up db connection
+- copy config file and set up db connection
 
 `cp config/config.php.example config/config.php`
+
+- open config/config.php and set up db connection
 
 ```php
 define('DB_HOST', 'localhost');
@@ -20,19 +17,23 @@ define('DB_PASS', 'root');
 define('DB_NAME', 'recman');
 ```
 
-set up a server, open `public` as root, as example
+- run sql script in created database - `migrations/create_tables.sql` that will create `users` table
+
+- set up a server, open `public` as root, for instance:
 
 ```
 cd public
 php -S localhost:8000
 ```
 
-### Database
+open `http://localhost:8000` in your browser
+
+## Database
 open and run sql script in prepared database - migrations/create_tables.sql
 
 that will create `users` table
 
-### Examples:
+## Examples:
 
 ##### index page
 
@@ -62,7 +63,7 @@ POST /registration.php - sending registration form (Guest)
 
 ![screenshot](images/registration.png)
 
-### TODO (improvements)
+## TODO (improvements)
 - routing system
 - validation system
   - better mobile_phone validation
