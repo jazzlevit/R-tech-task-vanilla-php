@@ -32,6 +32,36 @@ open and run sql script in prepared database - migrations/create_tables.sql
 
 that will create `users` table
 
+### Examples:
+
+##### index page
+
+GET /index.php - main page (Guest or Authorized)
+
+Guest
+
+![screenshot](images/guest.png)
+
+Authorized
+
+![screenshot](images/authorized.png)
+
+##### login page
+
+GET /login.php - login form (Guest)
+
+POST /login.php - sending login form (Guest)
+
+![screenshot](images/login.png)
+
+##### registration page
+
+GET /registration.php - registration form (Guest)
+
+POST /registration.php - sending registration form (Guest)
+
+![screenshot](images/registration.png)
+
 ### TODO (improvements)
 - routing system
 - validation system
