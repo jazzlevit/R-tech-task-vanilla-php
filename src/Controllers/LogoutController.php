@@ -9,10 +9,18 @@ class LogoutController extends BasicController
 
     public function logout()
     {
-        session_destroy();
+        $this->authorizationRequired();
 
-        FlashMessages::addMessage('User logout successfully.');
+        if ($this->isPost()) {
+            session_destroy();
 
+            session_start();
+            FlashMessages::addMessage('User logout successfully.');
+
+            $this->redirect('/index');
+        }
+
+        FlashMessages::addMessage('Something went wrong.', FlashMessages::TYPE_ERROR);
         $this->redirect('/index');
     }
 

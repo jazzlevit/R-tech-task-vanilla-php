@@ -10,6 +10,8 @@ class RegistrationController extends BasicController
 {
     public function register()
     {
+        $this->authorizationOnlyForGuests();
+
         $data = $this->getPostData();
 
         // show form

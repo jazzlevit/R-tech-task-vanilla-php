@@ -35,4 +35,6 @@ that will create `users` table
 ### TODO (improvements)
 - routing system
 - validation system
+  - better mobile_phone validation
 - authorization protection system
+- write auto tests

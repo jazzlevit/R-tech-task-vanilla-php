@@ -11,6 +11,8 @@ class LoginController extends BasicController
 
     public function login()
     {
+        $this->authorizationOnlyForGuests();
+
         $data = $this->getPostData();
 
         // show form
