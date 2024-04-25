@@ -1,6 +1,6 @@
 # RecMan test
 
-## TASK
+## Task Description
 - create a registration and a login forms
 - using only vanilla PHP (no frameworks)
 - use MVC pattern
