@@ -1,4 +1,4 @@
-# RecMan test
+# R-tech task (vanilla php)
 
 ## Task Description
 - create a registration and a login forms
