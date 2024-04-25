@@ -1,5 +1,11 @@
 # RecMan test
 
+## TASK
+- create a registration and a login forms
+- using only vanilla PHP (no frameworks)
+- use MVC pattern
+- bootstrap for design
+
 ## Set up configuration
 - install composer dependencies  
 `composer install`
